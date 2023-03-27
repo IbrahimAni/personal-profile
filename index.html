@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim - Software Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+<body class="bg-gradient-to-r from-purple-600 via-blue-500 to-green-500 min-h-screen">
+
+  <header class="bg-black bg-opacity-75 fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-white font-semibold text-lg">Ibrahim</div>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-4 text-white">
+            <li><a href="#about" class="hover:text-blue-400">About</a></li>
+            
+            <li><a href="#portfolio" class="hover:text-blue-400">Portfolio</a></li>
+            <li><a href="#experience" class="hover:text-blue-400">Experience</a></li>
+            <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+            <li><a href="#education" class="hover:text-blue-400">Education</a></li>
+            <li><a href="#certifications" class="hover:text-blue-400">Certifications</a></li>
+            <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="md:hidden text-white" id="mobile-menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+
+  <main>
+    <section id="about" class="relative py-40">
+      <div class="absolute inset-0">
+        <img src="https://source.unsplash.com/random/1600x900" alt="Background Image" class="w-full h-full object-cover">
+      </div>
+      <div class="bg-black bg-opacity-75 absolute inset-0"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="flex items-center justify-center">
+          <div class="text-center">
+            <h1 class="text-5xl font-bold text-white">Ibrahim</h1>
+            <h2 class="text-3xl font-semibold text-white">Software Engineer</h2>
+            <p class="text-xl text-white mt-4">
+              Passionate software engineer with experience in designing, developing, and maintaining web applications. Skilled in multiple programming languages and frameworks.
+            </p>
+          </div>
+          <div class="ml-10">
+            <img src="./assets/profile.png" alt="Profile Image" class="w-40 h-40 object-cover rounded-full border-4 border-white">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+
+    <section id="portfolio" class="bg-white bg-opacity-75 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10">Portfolio</h2>
+        <div class="swiper-container swiper">
+          <div class="swiper-wrapper">
+            <!-- project cards -->
+            <div class="swiper-slide flex flex-col bg-gray-100 p-4 rounded-lg cursor-pointer" onclick="window.open('https://example1.com', '_blank');" style="height: 100%;">
+              <img src="./assets/dashboard.png" alt="Stock Control and Ordering System" class="w-full mb-4 rounded-lg"/>
+              <h3 class="font-semibold text-lg mb-2">Stock Control and Ordering System</h3>
+              <p class="text-gray-600 flex-grow">A web-based stock control and ordering system developed as a school project. The system allows adding and removing product details, managing customer information, and handling orders. Features include product search, customer search, inventory management, order summary with total price calculation, and updating stock levels as orders are created and deleted. Developed using object-oriented programming principles and best practices.</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Know More</button>
+            </div>            
+            <div class="swiper-slide flex flex-col bg-gray-100 p-4 rounded-lg cursor-pointer" onclick="window.open('https://example2.com', '_blank');" style="height: 100%;">
+              <img src="./assets/bookstore.png" alt="Cloud-Deployed Web Application" class="w-full mb-4 rounded-lg"/>
+              <h3 class="font-semibold text-lg mb-2">Cloud-Deployed Web Application</h3>
+              <p class="text-gray-600 flex-grow">A data-driven web application developed for a school assessment, focusing on enterprise development and cloud deployment. The project explores various cloud services and deploys the application using two different architectural approaches: MVC and RESTful web service with a JavaScript client. The web application allows users to browse and search through a database, perform CRUD operations, and exchange data in JSON and XML formats via a RESTful web service. The aim is to demonstrate the ability to create, test, and consume web services in different formats, and implement a functional web application.</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Know More</button>
+            </div>
+            
+            <div class="swiper-slide flex flex-col bg-gray-100 p-4 rounded-lg cursor-pointer" onclick="window.open('https://technicity.vercel.app/', '_blank');" style="height: 100%;">
+              <img src="./assets/ai.png" alt="AI Blog Website" class="w-full mb-4 rounded-lg"/>
+              <h3 class="font-semibold text-lg mb-2">AI Blog Website</h3>
+              <p class="text-gray-600 flex-grow">A blog website dedicated to exploring the world of Artificial Intelligence and its capabilities. The site features articles and discussions on various AI topics, such as machine learning, natural language processing, computer vision, and more. Stay informed about the latest developments, breakthroughs, and applications in the rapidly evolving field of AI.</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Know More</button>
+            </div>
+            <div class="swiper-slide flex flex-col bg-gray-100 p-4 rounded-lg cursor-pointer" onclick="window.open('https://highbeeai.vercel.app/', '_blank');" style="height: 100%;">
+              <img src="./assets/chatGPT.png" alt="ChatGPT Clone" class="w-full mb-4 rounded-lg"/>
+              <h3 class="font-semibold text-lg mb-2">ChatGPT Clone</h3>
+              <p class="text-gray-600 flex-grow">A ChatGPT clone webpage that utilizes the OpenAI API to create an interactive chatbot experience. This project demonstrates the power and versatility of GPT-based language models in generating human-like responses. Users can engage in conversations with the chatbot on a wide range of topics, experiencing firsthand the advancements in AI and natural language processing.</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Know More</button>
+            </div>
+            
+            
+          </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-gray-100 bg-opacity-75 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10">Professional Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- experience cards -->
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg mb-2">Information Technology Executive</h3>
+            <h4 class="font-medium text-md mb-1">Megacare Online Limited, Nigeria</h4>
+            <p class="text-gray-600">Apr 2022 - Feb 2023</p>
+            <p class="text-gray-600 mt-2">Led the technology infrastructure for an e-commerce company, improving efficiency and reducing downtime. Managed website, database, and software systems while ensuring IT policies and procedures were up-to-date and in compliance with industry standards.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg mb-2">Administrative Officer</h3>
+            <h4 class="font-medium text-md mb-1">Chartered Institute of Taxation of Nigeria, Nigeria</h4>
+            <p class="text-gray-600">May 2022 - Sep 2022</p>
+            <p class="text-gray-600 mt-2">Provided high-quality support to senior executives and staff members, managing calendars, scheduling appointments, and organizing meetings. Developed strong organizational and time-management skills, ensuring efficient running of the organization.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg mb-2">Quality System Assistant</h3>
+            <h4 class="font-medium text-md mb-1">NAFDAC, Nigeria</h4>
+            <p class="text-gray-600">Feb 2021 - Feb 2022</p>
+            <p class="text-gray-600 mt-2">Assisted the Quality System Manager in ensuring effective implementation and maintenance of the quality management system. Conducted internal audits, reviewed and updated quality documents, and contributed to the agency's compliance with international standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+<!-- Skill section -->
+    <section id="skills" class="container mx-auto py-20">
+      <h2 class="text-3xl font-semibold text-center text-white mb-10">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
+        <div class="bg-gradient-to-r from-purple-600 via-blue-500 to-green-500 p-4 rounded-lg shadow-lg">
+          <h3 class="font-semibold text-xl mb-2">Languages</h3>
+          <ul class="list-none space-y-1">
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-r from-purple-600 via-blue-500 to-green-500 p-4 rounded-lg shadow-lg">
+          <h3 class="font-semibold text-xl mb-2">Frameworks</h3>
+          <ul class="list-none space-y-1">
+            <li>React</li>
+            <li>Express</li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-r from-purple-600 via-blue-500 to-green-500 p-4 rounded-lg shadow-lg">
+          <h3 class="font-semibold text-xl mb-2">Databases</h3>
+          <ul class="list-none space-y-1">
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Microsoft SQL Server</li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-r from-purple-600 via-blue-500 to-green-500 p-4 rounded-lg shadow-lg">
+          <h3 class="font-semibold text-xl mb-2">Tools</h3>
+          <ul class="list-none space-y-1">
+            <li>GitHub</li>
+            <li>Webpack</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-white bg-opacity-75 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10">Education</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Sample education cards -->
+          <div class="bg-gray-100 p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg mb-2">Master of Science in Computer Science</h3>
+            <h4 class="font-medium text-md mb-1">Manchester Metropolitan University, United Kingdom</h4>
+            <p class="text-gray-600">2023</p>
+            <p class="text-gray-600 mt-2">Studied modules in Advanced OOP, Computer Networking, Cloud and Enterprise Computing, Information Systems and Databases, Algorithms and Data Structures, and Information Security Management. Developed transferable skills such as project management, teamwork, critical thinking, and problem-solving.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg mb-2">Bachelor of Science in Biochemistry</h3>
+            <h4 class="font-medium text-md mb-1">Kwara State University, Nigeria</h4>
+            <p class="text-gray-600">2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Certifications Section -->
+<section id="certifications" class="bg-gray-100 bg-opacity-75 py-20">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-10">Certifications</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- certification cards -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-2">NCSP Digital Business Risk Awareness Certification</h3>
+        <h4 class="font-medium text-md mb-1">DVMS Institute</h4>
+        <p class="text-gray-600">Completed: Mar 2023</p>
+        <a href="./pdf/NCSP_Digital_Business_Risk_Awareness_Certification.pdf" download class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-4 inline-block">View Certificate</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-2">Java EE: Servlets and JavaSever Pages (JSP)</h3>
+        <h4 class="font-medium text-md mb-1">Linkedin Learning</h4>
+        <p class="text-gray-600">Completed: Mar 2023</p>
+        <a href="./pdf/Java EE Servlets and JavaSever Pages (JSP).pdf" download class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-4 inline-block">View Certificate</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-2">Getting Started with AWS Security Hub</h3>
+        <h4 class="font-medium text-md mb-1">AWS</h4>
+        <p class="text-gray-600">Completed: Dec 2022</p>
+        <a href="./pdf/AWS Course Completion Certificate.pdf" download class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-4 inline-block">View Certificate</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-2">The Complete 2022 Web Development Bootcamp</h3>
+        <h4 class="font-medium text-md mb-1">Udemy</h4>
+        <p class="text-gray-600">Completed: Nov 2021</p>
+        <a href="./pdf/Web Development Certificate.pdf" download class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-4 inline-block">View Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact Section -->    
+    <section id="contact" class="bg-white bg-opacity-75 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10">Get in Touch</h2>
+        <div id="contact-form-container" class="w-full max-w-md mx-auto space-y-6">
+          <form id="contact-form" class="w-full max-w-md mx-auto space-y-6" onsubmit="submitForm(event);">
+            <div>
+              <label for="name" class="block mb-2 font-medium">Name</label>
+              <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+            </div>
+            <div>
+              <label for="email" class="block mb-2 font-medium">Email</label>
+              <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+            </div>
+            <div>
+              <label for="message" class="block mb-2 font-medium">Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full p-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg w-full sm:w-auto">Submit</button>
+          </form>
+        </div>
+        <div id="success-message" class="w-full max-w-md mx-auto text-center text-xl font-semibold text-green-600" style="display: none;">
+          Thank you for getting in touch!
+        </div>
+      </div>
+    </section>
+    
+    
+</main>
+<!-- Footer -->
+<footer class="bg-black bg-opacity-75 text-white px-6 py-4">
+  <div class="container mx-auto">
+    <div class="flex flex-wrap justify-between items-center">
+      <div class="w-full sm:w-auto mb-4 sm:mb-0">
+        <h3 class="font-semibold text-lg">Ibrahim</h3>
+        <p>Software Engineer</p>
+      </div>
+      <div class="w-full sm:w-auto">
+        <ul class="flex justify-center sm:justify-start space-x-4">
+          <li><a href="https://www.linkedin.com/in/ibrahim-anifowoshe/" class="hover:text-blue-400">LinkedIn</a></li>
+          <li><a href="https://github.com/IbrahimAni" class="hover:text-blue-400">GitHub</a></li>
+          <li><a href="https://twitter.com/Ibrahim5352?t=I1xaZ_5z1lAln_3c5fzIOg&s=09" class="hover:text-blue-400">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p>&copy; 2023 Ibrahim. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
