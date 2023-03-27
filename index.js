@@ -24,25 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-async function submitForm(event) {
-  event.preventDefault();
+// async function submitForm(event) {
+//   event.preventDefault();
 
-  const form = document.getElementById('contact-form');
-  const formData = new FormData(form);
+//   const form = document.getElementById('contact-form');
+//   const formData = new FormData(form);
 
-  try {
-    const response = await fetch('/send-email', {
-      method: 'POST',
-      body: formData,
-    });
+//   try {
+//     const response = await fetch('/send-email', {
+//       method: 'POST',
+//       body: formData,
+//     });
 
-    if (response.ok) {
-      form.style.display = 'none';
-      document.getElementById('success-message').style.display = 'block';
-    } else {
-      // Handle error case
-    }
-  } catch (error) {
-    // Handle error case
-  }
-}
+//     if (response.ok) {
+//       form.style.display = 'none';
+//       document.getElementById('success-message').style.display = 'block';
+//     } else {
+//       // Handle error case
+//     }
+//   } catch (error) {
+//     // Handle error case
+//   }
+// }
