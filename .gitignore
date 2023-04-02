@@ -1,0 +1,7 @@
+.gitattribute
+.gitattributes
+node_modules
+database.js
+main.css
+package.json
+package-lock.json
